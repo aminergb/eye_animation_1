@@ -1,0 +1,148 @@
+.anim-object{
+    width:30%;
+    height:60%;
+     transition:transform 5s ease-in-out;
+     background-color:rgba(165, 42, 42, 0.582);
+      border-radius: 49% 51% 51% 49% /70% 74% 26% 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation: rotate 5s ease-in-out infinite alternate;
+    
+   
+}
+.anm{
+      width:30%;
+    height:30%;
+         background-color:rgba(165, 42, 42, 0.671);
+    border-radius:49% 51% 51% 49% / 51% 49% 51% 49% ;
+   animation: eye-change 5s ease-in-out  infinite alternate;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.anim-object:hover{
+    background-color: rgb(255, 255, 255);
+ 
+}
+@keyframes rotate{
+   
+    30%{
+      
+         border-radius: 75% 25% 51% 49%/ 70% 74% 26% 30% ;
+
+    }
+    50%{
+      
+        border-radius: 26% 74% 51% 49%/ 70% 74% 26% 30% ;
+
+    }
+    
+   
+
+}
+.anim-container{
+    width: 100%;
+    height: 100%;
+     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
+}
+.pupille{
+     width: 50%;
+    height: 50%;
+    border-radius: 50% 50%;
+    background-color: rgb(34, 19, 11);
+    animation: pup 5s ease-in-out forwards infinite alternate;
+}
+@keyframes pup {
+    0%{
+           transform: translateY(20%);
+    }
+      30%{
+      
+       transform: translateX(20%);
+
+    }
+    50%{
+      
+         transform: translateX(-20%);
+
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+.eyes{
+    width: 80% ;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    
+}
+.eye{
+    width: 50%;
+    height: 50%;
+     border-radius: 100% 0%;
+     background-color: rgb(255, 255, 255);
+       display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     
+      animation: eye-change 5s ease-in-out infinite alternate;
+}
+@keyframes eye-change{
+     0%{
+       
+          border-radius:49% 51% 51% 49% / 37% 32% 68% 63%;
+       
+    }
+    30%{
+      
+         border-radius: 75% 25% 25% 75% / 51% 49% 51% 49% ;
+
+    }
+    50%{
+      
+        border-radius: 26% 74% 72% 28% / 51% 49% 51% 49% ;
+
+    }
+    
+    100%{
+       
+      
+         border-radius: 49% 51% 51% 49% /70% 74% 26% 30%;
+       
+    }
+}
+@keyframes u-shaped{
+    0%{
+        transform: translateX(0%);
+          border-radius:49% 51% 51% 49% / 37% 32% 68% 63%;
+       
+    }
+    30%{
+        transform: translateY(80%) ;
+         border-radius: 75% 25% 25% 75% / 51% 49% 51% 49% ;
+
+    }
+    50%{
+        transform: translateX(80%)  translateY(80%) ;
+        border-radius: 26% 74% 72% 28% / 51% 49% 51% 49% ;
+
+    }
+    
+    100%{
+        transform: translateX(80%) translateY(0%);
+      
+         border-radius: 49% 51% 51% 49% /70% 74% 26% 30%;
+       
+    }
+}
